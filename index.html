@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Viewer</title>
+  <!---css from bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <!---js from bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!---google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!----header for movie app ---->
+  <header class="container d-flex flex-column flex-sm-row justify-content-between mt-3">
+    <h2 class="nav-brand">Movie Viewer</h2>
+    <form id="form" class="d-flex" role="search">
+      <input id="query" class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </header>
+  <ul class="container d-flex justify-content-end flex-sm-row mt-3">
+    <li><a class="btn btn-danger mx-2" href="index.html">Home</a></li>
+    <li><a class="btn btn-danger" href="movieDetail.html">Details</a></li>
+  </ul>
+  <p id="defaultText" class="display-5 text-center">Trending Movies</p>
+  <p id="searchText" class="display-5 text-center">Search Results</p>
+  <!----body for movie app ---->
+  <div class="container mt-5">
+    <div class="container text-center d-flex justify-content-center mt-3">
+      <div
+        style="width: 3rem; height: 3rem"
+        id="spinner"
+        class="spinner-border mt-5"
+        role="status"
+      >
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col gx-3">
+        <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+      </div>
+      <div class="col gx-3">
+        <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+      </div>
+      <div class="col gx-3">
+        <img data-id="2" class="img-fluid img-thumbnail rounded-4" src="" alt="">
+      </div>
+      <div class="col gx-3">
+        <img data-id="3" class="img-fluid img-thumbnail rounded-4" src="" alt="">
+      </div>
+    </div>
+      <div class="row mb-3">
+        <div class="col gx-3">
+          <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+        </div>
+        <div class="col gx-3">
+          <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+        </div>
+        <div class="col gx-3">
+          <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+        </div>
+        <div class="col gx-3">
+          <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+        </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col gx-3">
+        <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+      </div>
+      <div class="col gx-3">
+        <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+      </div>
+      <div class="col gx-3">
+        <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+      </div>
+      <div class="col gx-3">
+        <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+      </div>
+  </div>
+  <div class="row mb-3">
+    <div class="col gx-3">
+      <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+    </div>
+    <div class="col gx-3">
+      <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+    </div>
+    <div class="col gx-3">
+      <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+    </div>
+    <div class="col gx-3">
+      <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+    </div>
+</div>
+<div class="row mb-3">
+  <div class="col gx-3">
+    <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+  </div>
+  <div class="col gx-3">
+    <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+  </div>
+  <div class="col gx-3">
+    <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+  </div>
+  <div class="col gx-3">
+    <img class="img-fluid img-thumbnail rounded-4" src="" alt="">
+  </div>
+</div>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
